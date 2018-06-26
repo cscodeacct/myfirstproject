@@ -7,7 +7,7 @@ function makeGrid() {
 	var tbody = document.createElement('tbody');
 	for (var i = 0; i < height; i++) {
 		var tr = document.createElement('tr');
-		for (var j = 0; j < width; j++) {
+		for (var p = 0; p < width; p++) {
 			var td = document.createElement('td');
 			td.appendChild(document.createTextNode(''));
 			tr.appendChild(td);
