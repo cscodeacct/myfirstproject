@@ -1,35 +1,24 @@
-var button, colorPicker;
-
-button = $("#button");
-colorPicker = $("#colorPicker");
-
-//Calling of makeGrid function
-button.click(function (x) {
-	
-	$("tbody").remove();
-	colorPicker.val("#000000");
-	makeGrid();
-	x.preventDefault();
-});
-//Grid creation for coloring the cells
 function makeGrid() {
-	 // deifnition of input values
-	var y = $("#inputHeight").val();
-	var z = $("#inputWeight").val();
-//Rows creation
-		for (var i = 1; i <= y; i++) {
-		const tr = $("<tr></tr>");
-		$("table").append(tr);
-//Cells creation 
-		var p = 1;
-		while (p <= z) {
-			const td = $("<td></td>");
-			tr.append(td);
-			p++;
-//coloring of cells after clicking
-				$("td").click(function () {
-				$(this).css("background-color", colorPicker.val());
-			});
+	var height = document.getElementById('inputHeight').value;
+	var width = document.getElementById('inputWeight').value;
+	var table = document.getElementById('pixel_canvas');
+	// Creating table grid
+	table.innerHTML = '';
+	var tbody = document.createElement('tbody');
+	for (var i = 0; i < height; i++) {
+		var tr = document.createElement('tr');
+		for (var j = 0; j < width; j++) {
+			var td = document.createElement('td');
+			td.appendChild(document.createTextNode(''));
+			tr.appendChild(td);
 		}
+		tbody.appendChild(tr);
 	}
+	table.appendChild(tbody);
 }
+
+//jQuery code to change color of pixel 
+$('body').on('click', 'td', function () {
+	var color = document.getElementById('colorPicker').value;
+	$(this).css('background-color', color);
+});
