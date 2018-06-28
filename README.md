@@ -1,5 +1,5 @@
-# myfirstproject
-Pixel-Art-Maker-Project
+# Repository Name: myfirstproject
+Project Name: Pixel-Art-Maker-Project
 
 
 Link:
