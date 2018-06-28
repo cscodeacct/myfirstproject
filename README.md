@@ -2,5 +2,5 @@
 Project Name: Pixel-Art-Maker-Project
 
 
-Link:
+Url:
 https://cscodeacct.github.io/myfirstproject
