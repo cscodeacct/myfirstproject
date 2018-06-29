@@ -1,4 +1,4 @@
-# Repository: myfirstproject
+# myfirstproject
 
 #### Project Name: 
 Pixel-Art-Maker-Project
