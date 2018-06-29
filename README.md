@@ -1,4 +1,4 @@
-# myfirstproject
+# My First Project
 
 #### Project Name: 
 Pixel-Art-Maker-Project
